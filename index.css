@@ -468,6 +468,7 @@ h1 {
     box-shadow: var(--shadow-img);
     transition: all 0.4s ease;
     position: relative;
+    height: 100%;
     overflow: hidden;
     border: 3px solid transparent;
 }
