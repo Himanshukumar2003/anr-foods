@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Designs - ANR Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Dancing Script', cursive;
+
+            --color-primary: #2d5016;
+            --color-primary-dark: #1a2f0a;
+            --color-light: #EBFFDC;
+            --color-white: #ffffff;
+            --color-muted: #f8fffe;
+
+            --color-green-dark: #4a7c59;
+            --color-green-light: #6b8e23;
+            --color-green-lighter: #8fbc8f;
+
+            --gradient-bg: linear-gradient(135deg, rgba(74, 124, 89, 0.05) 0%, rgba(107, 142, 35, 0.05) 50%, rgba(143, 188, 143, 0.05) 100%);
+            --gradient-btn: linear-gradient(135deg, var(--color-green-light) 0%, var(--color-green-dark) 100%);
+            --gradient-decor: linear-gradient(45deg, var(--color-green-lighter), var(--color-green-light));
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--gradient-bg);
+        }
+
+        .footer-divider {
+            height: 50px;
+            background: var(--gradient-bg);
+        }
+
+        .design-title {
+            background: var(--gradient-btn);
+            color: var(--color-white);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        /* Footer 1: Classic Multi-Column */
+        .footer-1 {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 4rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-btn);
+        }
+
+        .footer-1 .footer-logo {
+            font-family: var(--font-secondary);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-green-lighter);
+            margin-bottom: 1rem;
+        }
+
+        .footer-1 .footer-link {
+            color: var(--color-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 0.3rem 0;
+        }
+
+        .footer-1 .footer-link:hover {
+            color: var(--color-green-lighter);
+            transform: translateX(5px);
+        }
+
+        .footer-1 .social-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-btn);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-1 .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer-1 .footer-bottom {
+            border-top: 1px solid var(--color-green-dark);
+            margin-top: 2rem;
+            padding-top: 2rem;
+        }
+
+        /* Footer 2: Wave Design */
+        .footer-2 {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 4rem 0 2rem;
+            position: relative;
+        }
+
+        .footer-2::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--color-primary);
+            clip-path: ellipse(100% 100% at 50% 100%);
+        }
+
+        .footer-2 .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .footer-2 .contact-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .footer-2 .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-btn);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer 3: Gradient Background */
+        .footer-3 {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: var(--color-white);
+            padding: 4rem 0 2rem;
+            position: relative;
+        }
+
+        .footer-3 .newsletter-box {
+            background: var(--color-white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            color: var(--color-primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-3 .newsletter-input {
+            border: 2px solid var(--color-light);
+            border-radius: 50px;
+            padding: 0.8rem 1.5rem;
+            border-right: none;
+        }
+
+        .footer-3 .newsletter-btn {
+            background: var(--gradient-btn);
+            border: none;
+            border-radius: 50px;
+            padding: 0.8rem 2rem;
+            color: var(--color-white);
+            font-weight: 600;
+        }
+
+        .footer-3 .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-3 .service-item:hover {
+            transform: translateX(10px);
+        }
+
+        .footer-3 .service-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--gradient-btn);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 0.8rem;
+        }
+
+        /* Footer 4: Card Style */
+        .footer-4 {
+            background: var(--gradient-bg);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-4 .footer-card {
+            background: var(--color-white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-4 .footer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .footer-4 .footer-main {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .footer-4 .quick-link {
+            background: var(--color-light);
+            color: var(--color-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-4 .quick-link:hover {
+            background: var(--gradient-btn);
+            color: var(--color-white);
+            transform: scale(1.05);
+        }
+
+        /* Footer 5: Split Design */
+        .footer-5 {
+            background: var(--color-white);
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .footer-5 .footer-left {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 4rem 3rem;
+            position: relative;
+        }
+
+        .footer-5 .footer-right {
+            background: var(--color-light);
+            color: var(--color-primary);
+            padding: 4rem 3rem;
+        }
+
+        .footer-5 .footer-left::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -50px;
+            width: 100px;
+            height: 100%;
+            background: var(--color-primary);
+            transform: skewX(-10deg);
+        }
+
+        .footer-5 .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-5 .feature-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(10px);
+        }
+
+        .footer-5 .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-btn);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+
+        /* Footer 6: Minimalist */
+        .footer-6 {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 3rem 0 1rem;
+            position: relative;
+        }
+
+        .footer-6 .footer-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-6 .footer-logo-large {
+            font-family: var(--font-secondary);
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--color-green-lighter);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer-6 .footer-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .footer-6 .footer-nav a {
+            color: var(--color-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .footer-6 .footer-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-green-lighter);
+            transition: width 0.3s ease;
+        }
+
+        .footer-6 .footer-nav a:hover::after {
+            width: 100%;
+        }
+
+        .footer-6 .footer-nav a:hover {
+            color: var(--color-green-lighter);
+        }
+
+        /* Footer 7: Grid Layout */
+        .footer-7 {
+            background: var(--color-primary-dark);
+            color: var(--color-white);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-7 .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-7 .info-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-7 .info-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .footer-7 .info-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-btn);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+
+        .footer-7 .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-7 .contact-method {
+            background: var(--gradient-btn);
+            color: var(--color-white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-7 .contact-method:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer 8: Modern Floating */
+
+        /* Common Styles */
+        h5 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .text-muted-custom {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+
+        @media (max-width: 768px) {
+            .footer-5 .footer-left::after {
+                display: none;
+            }
+
+            .footer-6 .footer-nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .footer-7 .contact-methods {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Footer 1: Classic Multi-Column -->
+    <div class="design-title">Footer 1: Classic Multi-Column</div>
+    <footer class="footer-1">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-logo">ANR FOOD</div>
+                    <p class="text-muted-custom">Fueling corporate success through exceptional catering. We specialize
+                        in fresh, high-quality food with a focus on convenience and flavors.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Quick Links</h5>
+                    <a href="#" class="footer-link">Home</a>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Services</a>
+                    <a href="#" class="footer-link">Menu</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Services</h5>
+                    <a href="#" class="footer-link">Corporate Catering</a>
+                    <a href="#" class="footer-link">Industrial Catering</a>
+                    <a href="#" class="footer-link">Event Catering</a>
+                    <a href="#" class="footer-link">Office Parties</a>
+                    <a href="#" class="footer-link">Daily Meals</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contact Info</h5>
+                    <p class="text-muted-custom"><i class="fas fa-map-marker-alt me-2"></i>123 Business District,
+                        Corporate City</p>
+                    <p class="text-muted-custom"><i class="fas fa-phone me-2"></i>+91 98765 43210</p>
+                    <p class="text-muted-custom"><i class="fas fa-envelope me-2"></i>info@anrfood.com</p>
+                    <p class="text-muted-custom"><i class="fas fa-clock me-2"></i>24/7 Service Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0 text-muted-custom">&copy; 2024 ANR FOOD. All rights reserved. | Privacy Policy | Terms of
+                    Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-divider"></div>
+
+    <!-- Footer 2: Wave Design -->
+    <div class="design-title">Footer 2: Wave Design</div>
+    <footer class="footer-2">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>Call Us</h5>
+                        <p>+91 98765 43210</p>
+                        <p>Available 24/7</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email Us</h5>
+                        <p>info@anrfood.com</p>
+                        <p>Quick Response</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Visit Us</h5>
+                        <p>123 Business District</p>
+                        <p>Corporate City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <h3 style="font-family: var(--font-secondary); color: var(--color-green-lighter);">ANR FOOD</h3>
+                <p class="text-muted-custom">Hygiene, Quality and Timely Delivered</p>
+                <p class="mb-0 text-muted-custom">&copy; 2024 ANR FOOD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-divider"></div>
+
+    <!-- Footer 3: Gradient Background -->
+    <div class="design-title">Footer 3: Gradient Background</div>
+    <footer class="footer-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="newsletter-box">
+                        <h3 style="color: var(--color-primary);">Stay Updated</h3>
+                        <p style="color: var(--color-green-dark);">Subscribe to our newsletter for latest updates and
+                            special offers.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control newsletter-input" placeholder="Enter your email">
+                            <button class="btn newsletter-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5>Our Services</h5>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fas fa-utensils"></i></div>
+                        <span>Corporate Catering Solutions</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fas fa-clock"></i></div>
+                        <span>24/7 Food Service</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                        <span>FSSAI Certified Hygiene</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fas fa-users"></i></div>
+                        <span>Event & Party Catering</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0 text-muted-custom">&copy; 2024 ANR FOOD - Fueling Corporate Success</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-divider"></div>
+
+    <!-- Footer 4: Card Style -->
+    <div class="design-title">Footer 4: Card Style</div>
+    <footer class="footer-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="footer-card footer-main">
+                        <h3 style="font-family: var(--font-secondary);">ANR FOOD</h3>
+                        <p>Your trusted partner in corporate catering, delivering consistently high-quality, nutritious
+                            and diverse meals.</p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h6>Contact Information</h6>
+                                <p><i class="fas fa-phone me-2"></i>+91 98765 43210</p>
+                                <p><i class="fas fa-envelope me-2"></i>info@anrfood.com</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Business Hours</h6>
+                                <p><i class="fas fa-clock me-2"></i>24/7 Service</p>
+                                <p><i class="fas fa-calendar me-2"></i>All Days Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-card">
+                        <h5 style="color: var(--color-primary);">Quick Access</h5>
+                        <div class="mt-3">
+                            <a href="#" class="quick-link">Home</a>
+                            <a href="#" class="quick-link">About</a>
+                            <a href="#" class="quick-link">Services</a>
+                            <a href="#" class="quick-link">Menu</a>
+                            <a href="#" class="quick-link">Contact</a>
+                            <a href="#" class="quick-link">Careers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0" style="color: var(--color-primary);">&copy; 2024 ANR FOOD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-divider"></div>
+
+    <!-- Footer 5: Split Design -->
+    <div class="design-title">Footer 5: Split Design</div>
+    <footer class="footer-5">
+        <div class="row g-0">
+            <div class="col-lg-6">
+                <div class="footer-left">
+                    <h3 style="font-family: var(--font-secondary);">ANR FOOD</h3>
+                    <p class="mb-4">Hygiene, Quality and Timely Delivered</p>
+
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-award"></i></div>
+                        <div>
+                            <h6 class="mb-1">FSSAI Certified</h6>
+                            <small>Top food safety protocols</small>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h6 class="mb-1">24/7 Service</h6>
+                            <small>Round the clock availability</small>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                        <div>
+                            <h6 class="mb-1">Expert Team</h6>
+                            <small>25+ years experience</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer-right">
+                    <h5>Get In Touch</h5>
+                    <div class="mb-4">
+                        <p><strong>Address:</strong><br>123 Business District, Corporate City</p>
+                        <p><strong>Phone:</strong><br>+91 98765 43210</p>
+                        <p><strong>Email:</strong><br>info@anrfood.com</p>
+                    </div>
+
+                    <h6>Follow Us</h6>
+                    <div class="social-icons">
+                        <a href="#" style="color: var(--color-primary); margin-right: 1rem; font-size: 1.5rem;"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: var(--color-primary); margin-right: 1rem; font-size: 1.5rem;"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--color-primary); margin-right: 1rem; font-size: 1.5rem;"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="mt-4">
+                        <small>&copy; 2024 ANR FOOD. All rights reserved.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-divider"></div>
+
+    <!-- Footer 6: Minimalist -->
+    <div class="design-title">Footer 6: Minimalist</div>
+    <footer class="footer-6">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-large">ANR FOOD</div>
+                <p class="text-muted-custom">Fueling Corporate Success Through Exceptional Catering</p>
+
+                <nav class="footer-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Team</a>
+                    <a href="#">Contact</a>
+                </nav>
+
+                <div class="contact-info mb-4">
+                    <p class="text-muted-custom">
+                        <i class="fas fa-phone me-2"></i>+91 98765 43210 |
+                        <i class="fas fa-envelope me-2 ms-3"></i>info@anrfood.com
+                    </p>
+                </div>
+
+                <div class="social-icons mb-4">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <p class="mb-0 text-muted-custom">&copy; 2024 ANR FOOD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-divider"></div>
+
+    <!-- Footer 7: Grid Layout -->
+    <div class="design-title">Footer 7: Grid Layout</div>
+    <footer class="footer-7">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-phone"></i></div>
+                    <h6>Call Us</h6>
+                    <p>+91 98765 43210</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <h6>Email</h6>
+                    <p>info@anrfood.com</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h6>Location</h6>
+                    <p>Corporate City</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-clock"></i></div>
+                    <h6>Service</h6>
+                    <p>24/7 Available</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h3 style="font-family: var(--font-secondary); color: var(--color-green-lighter); margin-bottom: 2rem;">
+                    ANR FOOD</h3>
+                <div class="contact-methods">
+                    <a href="tel:+919876543210" class="contact-method">
+                        <i class="fas fa-phone me-2"></i>Call Now
+                    </a>
+                    <a href="mailto:info@anrfood.com" class="contact-method">
+                        <i class="fas fa-envelope me-2"></i>Email Us
+                    </a>
+                    <a href="#" class="contact-method">
+                        <i class="fas fa-calendar me-2"></i>Book Service
+                    </a>
+                </div>
+                <p class="mt-4 mb-0 text-muted-custom">&copy; 2024 ANR FOOD - Hygiene, Quality and Timely Delivered</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-divider"></div>
+
+    <!-- Footer 8: Modern Floating -->
+    <div class="design-title">Footer 8: Modern Floating</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
