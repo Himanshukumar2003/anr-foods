@@ -553,9 +553,7 @@ footer .company-logo {
 }
 
 footer .footer-sections {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+
     margin-bottom: 2rem;
 }
 
@@ -601,4 +599,75 @@ footer .social-link {
 footer .social-link:hover {
     transform: translateY(-3px) scale(1.1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/*  */
+
+
+.profile-card {
+    position: relative;
+    padding: 30px 0;
+}
+
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px 0px 40px 40px;
+    border: 3px solid var(--color-primary-dark);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: visible;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.profile-card img {
+    margin-top: -100px;
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+}
+
+
+.profile-content {
+    padding: 15px;
+}
+
+.profile-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.profile-designation {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.profile-name {
+    color: #006837;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 15px;
+    }
+
+    .profile-content {
+        padding: 10px 0;
+    }
+
+    .profile-designation {
+        text-align: center;
+    }
 }
