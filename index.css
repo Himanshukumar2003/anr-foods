@@ -663,6 +663,10 @@ footer .social-link:hover {
         margin: 0 auto 15px;
     }
 
+    .profile-card {
+        margin-bottom: 30px;
+    }
+
     .profile-content {
         padding: 10px 0;
     }
