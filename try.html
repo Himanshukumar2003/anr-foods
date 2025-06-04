@@ -4,195 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANR FOOD - Founders</title>
+    <title>ANR Food - Our Presence</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
+        :root {
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Dancing Script', cursive;
+
+            --color-primary: #2d5016;
+            --color-primary-dark: #1a2f0a;
+            --color-light: #EBFFDC;
+            --color-white: #ffffff;
+            --color-muted: #f8fffe;
+
+            --color-green-dark: #4a7c59;
+            --color-green-light: #6b8e23;
+            --color-green-lighter: #8fbc8f;
+
+            --font-lg: 70px;
+            --font-md: 2.4rem;
+            --font-sm: 1.1rem;
+
+            --btn-radius: 50px;
+            --shadow-btn: 0 4px 15px rgba(0, 0, 0, 0.2);
+            --shadow-btn-hover: 0 6px 20px rgba(0, 0, 0, 0.3);
+
+            --shadow-img: 0 8px 30px rgba(0, 0, 0, 0.1);
+
+            --gradient-bg: linear-gradient(135deg, rgba(74, 124, 89, 0.05) 0%, rgba(107, 142, 35, 0.05) 50%, rgba(143, 188, 143, 0.05) 100%);
+            --gradient-btn: linear-gradient(135deg, var(--color-green-light) 0%, var(--color-green-dark) 100%);
+            --gradient-decor: linear-gradient(45deg, var(--color-green-lighter), var(--color-green-light));
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            font-family: var(--font-primary);
+            background: linear-gradient(135deg, #f5f5dc 0%, #f0f8e8 100%);
+            padding: 2rem 0;
         }
 
-        .profile-card {
-            position: relative;
-            padding: 30px 0;
-        }
-
-        .profile-img-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 40px 0px 40px 40px;
-            border: 3px solid green;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            overflow: visible;
-            height: 100%;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-        }
-
-        img {
-            margin-top: -100px;
-            width: 100%;
-            max-height: 350px;
-            object-fit: contain;
-        }
-
-
-        .profile-content {
-            padding: 15px;
-        }
-
-        .profile-text {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            font-weight: 500;
-            text-align: justify;
-        }
-
-        .profile-designation {
-            font-size: 24px;
-            margin-bottom: 10px;
-            font-weight: bold;
-            text-align: left;
-        }
-
-        .profile-name {
-            color: #006837;
-            font-weight: bold;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .profile-img {
-                width: 100px;
-                height: 100px;
-                margin: 0 auto 15px;
-            }
-
-            .profile-content {
-                padding: 10px 0;
-            }
-
-            .profile-designation {
-                text-align: center;
-            }
-        }
+        /* Our Presence Section */
     </style>
 </head>
 
 <body>
-    <div class="container my-5">
-        <!-- Founder Profile -->
-        <div class="profile-card ">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-4 order-1 order-md-2">
-                    <div class="profile-img-container">
-                        <img src="img/asset-5.png" alt="Founder Mr. Ajay Raj" class="img-fluid rounded">
+    <section class="presence-section">
+        <!-- Decorative elements -->
+        <div class="decorative-dots dots-1"></div>
+        <div class="decorative-dots dots-2"></div>
+
+        <div class="container">
+            <div class="presence-header">
+                <div class="location-pin">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="section-title-box">
+                    <h2 class="section-title">Our Presence</h2>
+                </div>
+            </div>
+
+            <div class="locations-container">
+                <!-- First Row -->
+                <div class="location-row">
+                    <div class="location-badge fade-in">
+                        <span>Delhi</span>
+                    </div>
+                    <div class="location-badge fade-in">
+                        <span>Gurgaon</span>
+                    </div>
+                    <div class="location-badge fade-in">
+                        <span>Faridabad</span>
                     </div>
                 </div>
-                <div class="col-md-8 order-2 order-md-1">
-                    <div class="profile-content">
-                        <div class="profile-designation">
-                            FOUNDER <span class="profile-name">(MR. AJAY RAJ)</span>
-                        </div>
-                        <p class="profile-text">
-                            Late Shri Mr. Ajay Raj (Founder), a mechanical engineer turned entrepreneur, was the
-                            visionary behind ANR FOOD. In 2001, he founded the company with a passion for food and a
-                            mission to build a strong corporate food solutions brand. He laid the foundation, management
-                            principles, and a vibrant work culture that reflects his personality. His people-first
-                            approach and dedication continue to shape our core values in industrial catering. At ANR
-                            FOOD, we uphold his legacy as our guiding force and will always do so.
-                        </p>
+
+                <!-- Second Row -->
+                <div class="location-row">
+                    <div class="location-badge fade-in">
+                        <span>Palwal</span>
+                    </div>
+                    <div class="location-badge fade-in">
+                        <span>Noida</span>
+                    </div>
+                    <div class="location-badge fade-in">
+                        <span>IMT Manesar</span>
+                    </div>
+                </div>
+
+                <!-- Third Row -->
+                <div class="location-row">
+                    <div class="location-badge fade-in">
+                        <span>IMT Bawal Sector-04</span>
+                    </div>
+                    <div class="location-badge fade-in">
+                        <span>IMT Bawal Sector-2</span>
+                    </div>
+                </div>
+
+                <!-- Fourth Row -->
+                <div class="location-row">
+                    <div class="location-badge fade-in">
+                        <span>IMT Bawal Sector-3</span>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Co-Founder Profile -->
-        <div class="profile-card ">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-4 ">
-                    <div class="profile-img-container">
-                        <img src="img/asset-6.png" alt="Co-Founder Mrs. Neeta Raj" class="img-fluid rounded">
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="profile-content">
-                        <div class="profile-designation">
-                            CO-FOUNDER <span class="profile-name">(MRS. NEETA RAJ)</span>
-                        </div>
-                        <p class="profile-text">
-                            Mrs. Neeta Raj (Co-Founder), oversees all the administrative work of this company. She has
-                            been one of the pillars who brings compassion, discipline and operational excellence to the
-                            business. With a strong core in customer relations, she plays an important role in team
-                            coordination and maintaining professionalism in the company. As the founder’s wife and
-                            business partner, she adds a personal touch to every aspect of our operations, ensuring that
-                            our client feels not just served – but cared for.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-        <!-- Food & Beverages Specialist -->
-        <div class="profile-card ">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-4 order-1 order-md-2">
-                    <div class="profile-img-container">
-                        <img src="img/asset-7.png" alt="Food & Beverages Specialist Mr. Kumar Saurabh Sushi"
-                            class="img-fluid rounded">
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="profile-content">
-                        <div class="profile-designation">
-                            FOOD & BEVERAGES SPECIALIST <span class="profile-name">(MR. KUMAR SAURABH SUSHIL)</span>
-                        </div>
-                        <p class="profile-text">
-                            Mr. Kumar Saurabh Sushil, Chief Food & Beverage Specialist, brings over 25 years of hands-on
-                            experience in the food industry. He has worked with top hotel brands like Taj, Hyatt, ITC
-                            Hotels, Radisson Blu, and more. His vast exposure and services, carrying forward the founder
-                            Mr. Ajay Raj’s vision, has helped ANR FOOD scale to new heights. He also leads the team to
-                            become India’s leading Institutional Catering Provider. He has the knowledge to combine
-                            tradition with a forward-thinking approach to food trends, safety, and consumer behavior.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
 
-        <!-- Chef -->
-        <div class="profile-card ">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-4 order-1 order-md-0">
-                    <div class="profile-img-container">
-                        <img src="img/asset-8.png" alt="Chef Andav Raj" class="img-fluid rounded">
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="profile-content">
-                        <div class="profile-designation">
-                            CHEF <span class="profile-name">(ANDAV RAJ)</span>
-                        </div>
-                        <p class="profile-text">
-                            Chef Andav Raj, a professional chef with a culinary degree from the Institute of Hotel
-                            Management (IHM), has worked with some of India’s top hotel brands. The Oberoi Udaivilas,
-                            Udaipur – and helped launch five restaurants in the region. He pushes culinary boundaries by
-                            blending traditional Indian tastes with modern plating and international influences. Cooking
-                            has always been his passion, and his creativity shines in designing scrumptious menus. His
-                            attention to detail and ability to innovate with new techniques reflect his deep commitment
-                            to excellence in the culinary world.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+        // Observe all location badges
+        document.querySelectorAll('.location-badge').forEach(badge => {
+            observer.observe(badge);
+        });
     </script>
 </body>
 
