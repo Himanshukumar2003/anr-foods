@@ -1,0 +1,579 @@
+/*============================ Min - Width Query ============================*/
+
+@media (min-width: 1500px) {
+    .rac_container {
+        max-width: 1532px;
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .5);
+        padding-left: var(--bs-gutter-x, .5);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/*============================ Max - Width Query ============================*/
+
+@media (max-width: 1875px) {
+    .rac_banner_content {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 1700px) {
+    h3,
+    .rac_about_text h3 {
+        font-size: 29px;
+    }
+    .rac_app_text h3 {
+        font-size: 45px;
+    }
+    .rac_banner_wrapper::before, .rac_about_wrapper::before, .rac_offer_wrapper::before, .rac_booking_wrapper::before, .rac_chefs_wrapper::before, .rac_footer_wrapper::before, .rac_planning_wrapper::before {
+        top: 0;
+        background-size: contain;
+        background-position: center;
+        left: 0;
+    }
+    .rac_banner_text h1 {
+        font-size: 70px;
+    }
+
+    .rac_about_content::before {
+        background-size: 90%;
+        width: calc(314px * .9);
+        height: 190px;
+        left: -105px;
+    }
+    .rac_about_content::after {
+        background-size: 90%;
+        width: calc(356px * .9);
+        height: 332px;
+        right: -190px;
+    }
+    .rac_app_text {
+        max-width: 610px;
+    }
+}
+
+@media (max-width: 1499.98px) {
+    h3,
+    .rac_about_text h3 {
+        font-size: 28px;
+    }
+    .rac_app_text h3 {
+        font-size: 40px;
+    }
+    .rac_banner_content {
+        padding-left: 40px;
+    }
+    .rac_about_content::before {
+        background-size: 80%;
+        width: calc(314px * .8);
+        height: 150px;
+        left: -85px;
+    }
+    .rac_about_content::after {
+        background-size: 80%;
+        width: calc(356px * .8);
+        height: 265px;
+        right: -180px;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    h3,
+    .rac_about_text h3 {
+        font-size: 27px;
+    }
+    h4,
+    .rac_offer_price h4,
+    .rac_menu_title h2 {
+        font-size: 19px;
+    }
+    .rac_app_text h3 {
+        font-size: 35px;
+    }
+    .rac_section {
+        padding: 80px 0;
+    }
+    .rac_banner_wrapper {
+        padding: 130px 0 90px;
+    }
+    .rac_banner_content {
+        padding-left: unset;
+    }
+    .rac_banner_text h1 {
+        font-size: 62px;
+    }
+    .rac_about_content::before {
+        background-size: 70%;
+        width: calc(314px * .7);
+        height: 115px;
+        left: -62px;
+    }
+    .rac_about_content::after {
+        background-size: 70%;
+        width: calc(356px * .7);
+        height: 202px;
+        right: -172px;
+    }
+    .rac_service_box {
+        padding: 0 10px 15px;
+        max-width: 268px;
+    }
+    .rac_booking_wrapper {
+        padding-bottom: 0;
+    }
+    .rac_chefs_text {
+        padding: 30px 15px;
+    }
+    .grid-item {
+        width: calc(100% / 3);
+    }
+    .rac_inr_pages_banner {
+        padding: 120px 0 70px;
+    }
+    .rac_map_content iframe {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    h3,
+    .rac_about_text h3 {
+        font-size: 26px;
+    }
+    .rac_app_text h3 {
+        font-size: 30px;
+    }
+    .rac_banner_text h1,
+    .rac_page_title h1 {
+        font-size: 52px;
+    }
+    .rac_nav_item,
+    .rac_nav_btn>ul {
+        gap: 40px;
+    }
+    .rac_nav_item>ul {
+        gap: 35px;
+    }
+    .rac_about_text {
+        padding: unset;
+    }
+    .rac_about_text p,
+    .rac_about_bottom {
+        margin-top: 10px;
+    }
+    .rac_about_name h4 {
+        margin: 5px 0 0;
+    }
+    .rac_about_name img {
+        max-height: 45px;
+    }
+    .rac_about_bottom_img img {
+        max-height: 150px;
+    }
+    .rac_offer_box {
+        flex-direction: column;
+    }
+    .rac_offer_content {
+        padding-left: 30px;
+        margin-left: auto;
+        margin-top: -95px;
+        padding-top: 125px;
+        text-align: center;
+    }
+    .rac_booking_img {
+        margin: auto;
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+    }
+    .rac_menu_title h2::before {
+        width: 90px;
+    }
+    .rac_app_text {
+        max-width: 430px;
+    }
+    .rac_inr_pages_banner {
+        padding: 120px 0 50px;
+    }
+     .rac_history_slider .swiper{
+        max-height: 100%;
+    }
+    .rac_history_slider .swiper-pagination {
+        flex-direction: row;
+        padding-bottom: 25px;
+    }
+    .rac_history_slider .swiper-pagination-bullet{
+        width: 100%;
+    }
+    .rac_history_slider .swiper-pagination-bullet::after {
+        right: 50%;
+        top: 40px;
+    }
+    .rac_history_slider .swiper-pagination-bullet::before {
+        right: -50%;
+        height: 2px;
+        width: 100%;
+        top: 43px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    h3,
+    .rac_about_text h3,
+    .rac_app_text h3 {
+        font-size: 25px;
+    }
+    h4,
+    .rac_offer_price h4,
+    .rac_menu_title h2 {
+        font-size: 18px;
+    }
+    .rac_section {
+        padding: 70px 0;
+    }
+    .rac_toggle_btn,
+    .rac_res_logo {
+        display: block;
+    }
+    .rac_res_logo img{
+        max-width: 80px;
+    }
+    .rac_nav_item>ul {
+        position: fixed;
+        left: -280px;
+        top: 0;
+        height: 100vh;
+        background-color: var(--rac-white-color);
+        width: 280px;
+        padding: 30px 20px;
+        margin: 0;
+        z-index: 111;
+        transition: all 0.5s;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu-open .rac_nav_item>ul {
+        left: 0;
+    }
+    .rac_res_logo {
+        margin-bottom: 20px;
+    }
+    .rac_nav_item>ul li a {
+        padding: 0 0 10px;
+        width: 100%;
+        display: inline-flex;
+        border-bottom: 1px solid var(--rac-border-color);
+        justify-content: space-between;
+    }
+    .rac_nav_item>ul li a:hover, .rac_nav_item>ul li a.active {
+        color: var(--rac-primary-color);
+        padding-left: 15px;
+    }
+    .rac_nav_item>ul li a::after {
+        display: none;
+    }
+
+    .rac_nav_item>ul li a::before {
+        top: 50%;
+        transform: rotate(90deg) translate(-8px, 18px);
+    }
+    .rac_nav_item>ul li a:hover::before,
+    .rac_nav_item>ul li a.active::before {
+        left: 5%;
+    }
+    .rac_banner_wrapper {
+        padding: 130px 0 60px;
+    }
+    .rac_banner_img {
+        position: absolute;
+        bottom: 56px;
+        right: 10px;
+        max-width: 240px;
+        /* transform: rotate(75deg); */
+        opacity: .2;
+    }
+    .rac_banner_text {
+        text-align: center;
+    }
+    .rac_banner_text h1,
+    .rac_page_title h1 {
+        font-size: 50px;
+    }
+    .rac_banner_text p {
+        margin: 30px auto;
+    }
+    .rac_banner_btn {
+        justify-content: center;
+    }
+    .rac_about_text,
+    .rac_about_bottom {
+        padding: 0 30px;
+    }
+    .rac_about_bottom {
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+    .rac_offer_img {
+        min-width: fit-content;
+        text-align: center;
+    }
+    .rac_offer_content {
+        margin-top: -80px;
+        padding-top: 105px;
+    }
+    .rac_offer_img img {
+        max-width: 160px;
+    }
+    .rac_booking_content>.row {
+        flex-direction: column-reverse;
+        row-gap: 0;
+    }
+    .rac_booking_img {
+        justify-content: center;
+        max-width: 350px;
+    }
+    .rac_menu_box {
+        flex-wrap: wrap;
+    }
+    .rac_chefs_slider .swiper-pagination {
+        bottom: 35px;
+    }
+    .rac_app_box {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+    }
+    .rac_app_img {
+        margin: auto;
+    }
+    .rac_app_img img:last-child {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: .2;
+    }
+    .rac_app_stores {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .rac_footer_content {
+        margin-top: 20px;
+    }
+    .rac_inr_pages_banner {
+        padding: 100px 0 40px;
+    }
+    .rac_map_content iframe {
+        height: 400px;
+    }
+    .rac_planning_img img {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    h3,
+    .rac_about_text h3,
+    .rac_app_text h3 {
+        font-size: 24px;
+    }
+    .rac_section {
+        padding: 60px 0;
+    }
+    .rac_banner_text h1,
+    .rac_page_title h1 {
+        font-size: 45px;
+    }
+    .rac_nav_btn>ul {
+        gap: 30px;
+    }
+    .rac_about_text,
+    .rac_about_bottom {
+        padding: 0 15px;
+    }
+    .rac_offer_content {
+        margin-top: -75px;
+        padding-top: 100px;
+    }
+    .rac_offer_img img {
+        max-width: 150px;
+    }
+    .rac_booking_img {
+        max-width: 250px;
+    }
+    .rac_menu_title h2::before {
+        display: none;
+    }
+    .rac_chefs_box,
+    .rac_chefs_social {
+        max-width: 290px;
+        margin: auto;
+    }
+    .rac_chefs_slider .swiper-pagination {
+        bottom: 25px;
+    }
+    .rac_testimonial_slider .swiper::after {
+        display: none;
+    }
+    .grid-item {
+        width: calc(100% / 2);
+    }
+    .rac_footer_content {
+        margin-top: 0;
+    }
+    .rac_map_content iframe {
+        height: 300px;
+    }
+    .rac_plan_box.right:nth-child(2) {
+        padding-left: 30px;
+    }
+    .rac_plan_box.left:nth-child(2) {
+        padding-right: 30px;
+    }
+    .rac_history_slider .swiper-pagination-bullet{
+        font-size: 16px;
+    }
+    .rac_history_img {
+        max-height: 300px;
+    }
+    .rac_section_heading h3::before,
+    .rac_section_heading h3::after {
+        display: none !important;
+    }
+    .rac_section_heading1 h3::after,
+    .rac_section_heading1 h3::before{
+        display: none
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        font-size: 14px;
+    }
+    h3,
+    .rac_about_text h3,
+    .rac_app_text h3 {
+        font-size: 20px;
+    }
+    h4,
+    .rac_offer_price h4,
+    .rac_menu_title h2 {
+        font-size: 16px;
+    }
+    .rac_section {
+        padding: 50px 0;
+    }
+    .rac_section_heading h3::before,
+    .rac_section_heading h3::after {
+        display: none !important;
+    }
+    .rac_btn,
+    .rac_form_btn .rac_btn {
+        min-width: 100px;
+        min-height: 40px;
+    }
+    .rac_banner_text h1,
+    .rac_page_title h1 {
+        font-size: 40px;
+    }
+    .rac_nav_btn>ul {
+        gap: 20px;
+    }
+    .rac_about_text,
+    .rac_about_bottom {
+        padding: unset;
+    }
+    .rac_about_bottom_img {
+        margin-bottom: -15px;
+    }
+    .rac_about_bottom_img img {
+        max-height: 110px;
+    }
+    .rac_offer_content {
+        margin-top: -70px;
+        padding-top: 90px;
+    }
+    .rac_offer_img img {
+        max-width: 140px;
+    }
+    .rac_offer_text h4 {
+        margin-bottom: 5px;
+    }
+    .rac_offer_rating img {
+        max-width: 16px;
+    }
+    .rac_chefs_slider .swiper-pagination {
+        bottom: 20px;
+    }
+    .grid-item {
+        width: 100%;
+    }
+    .rac_inr_pages_banner {
+        padding: 90px 0 30px;
+    }
+    .rac_plan_box.right:nth-child(2) {
+        padding-left: unset;
+    }
+    .rac_plan_box.left:nth-child(2) {
+        padding-right: unset;
+    }
+    .rac_plan_box,
+    .rac_plan_box.left {
+        text-align: center;
+    }
+    .rac_plan_box .rac_plan_title,
+    .rac_plan_box.left .rac_plan_title {
+        justify-content: center;
+    }
+    .rac_plan_text,
+    .rac_plan_box.left .rac_plan_text {
+        margin: 15px auto 0;
+    }
+    .rac_planning_img img {
+        max-width: 80%;
+    }
+    .rac_history_slider .swiper-pagination-bullet{
+        font-size: 14px;
+    }
+    .rac_chef_content {
+        padding-left: 0px;
+    }
+    .rac_chef_image{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 340px;
+        opacity: .2;
+    }
+}
+
+@media (max-width: 399.98px) {
+    .rac_banner_text h1,
+    .rac_page_title h1 {
+        font-size: 32px;
+    }
+    .rac_about_bottom_img img {
+        max-height: 80px;
+    }
+    .rac_offer_content {
+        padding: 90px 15px 25px 15px;
+    }
+    .rac_booking_img {
+        max-width: 200px;
+    }
+    .rac_planning_img img {
+        max-width: 100%;
+    }
+    .rac_section_heading h3::before,
+    .rac_section_heading h3::after {
+        display: none !important;
+    }
+}

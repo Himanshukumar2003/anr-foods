@@ -4,71 +4,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANR Food - Contact Form</title>
+    <title>Times Marketing & Industrial Engineers</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
     <style>
-        :root {
-            --font-primary: 'Poppins', sans-serif;
-            --font-secondary: 'Dancing Script', cursive;
-
-            --color-primary: #2d5016;
-            --color-primary-dark: #1a2f0a;
-            --color-light: #EBFFDC;
-            --color-white: #ffffff;
-            --color-muted: #f8fffe;
-
-            --color-green-dark: #4a7c59;
-            --color-green-light: #6b8e23;
-            --color-green-lighter: #8fbc8f;
-
-            --font-lg: 70px;
-            --font-md: 2.4rem;
-            --font-sm: 1.1rem;
-
-            --btn-radius: 50px;
-            --shadow-btn: 0 4px 15px rgba(0, 0, 0, 0.2);
-            --shadow-btn-hover: 0 6px 20px rgba(0, 0, 0, 0.3);
-
-            --shadow-img: 0 8px 30px rgba(0, 0, 0, 0.1);
-
-            --gradient-bg: linear-gradient(135deg, rgba(74, 124, 89, 0.05) 0%, rgba(107, 142, 35, 0.05) 50%, rgba(143, 188, 143, 0.05) 100%);
-            --gradient-btn: linear-gradient(135deg, var(--color-green-light) 0%, var(--color-green-dark) 100%);
-            --gradient-decor: linear-gradient(45deg, var(--color-green-lighter), var(--color-green-light));
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
-        body {
-            font-family: var(--font-primary);
-            background: var(--gradient-bg);
-            padding: 3rem 0;
-            min-height: 100vh;
+
+        .header {
+            position: absolute;
+            top: 0;
+            z-index: 99;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .logo-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .logo.marketing {
+            background: #c41e3a;
+            color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .logo.industrial {
+            background: #0ea5e9;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .company-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+
+        .main-content {
+            height: 100vh;
+            display: flex;
+        }
+
+        .logo-right-section,
+        .logo-left-section {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .section {
+            flex: 1;
+            position: relative;
+            background-size: cover;
+            background-position: center;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        /* Contact Button Styles */
+        .section-left {
+            background-image: url('assets/images/blog_img2.webp');
+        }
+
+        .section-right {
+            background-image: url('assets/images/blog_img3.webp');
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay-green {
+            background: rgba(34, 197, 94, 0.3);
+        }
+
+        .overlay-blue {
+            background: rgba(59, 130, 246, 0.3);
+        }
+
+        .enter-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .enter-btn.green {
+            background: #22c55e;
+        }
+
+        .enter-btn.green:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+
+        .enter-btn.blue {
+            background: #3b82f6;
+        }
+
+        .enter-btn.blue:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .equipment-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            opacity: 0.8;
+        }
+
+        .equipment-item {
+            background-size: cover;
+            background-position: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+
+
+        .logo-section img {
+            width: 100px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-center">
-            <h1 style="color: var(--color-primary); margin-bottom: 2rem; font-family: var(--font-secondary);">ANR FOOD
-            </h1>
-            <p style="color: var(--color-green-dark); margin-bottom: 3rem;">Click the button below to get in touch with
-                us</p>
+    <header class="header w-100">
 
-            <!-- Contact Button -->
+        <div class="logo-left-section">
+            <div class="logo-section w-100">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="logo-right-section">
+            <div class="logo-section ">
+                <img src="assets/images/logo-two.png" alt="">
+            </div>
 
         </div>
-    </div>
+    </header>
 
-    <!-- Contact Form Modal -->
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section section-right">
+            <div class="overlay overlay-blue">
+                <button class="enter-btn blue">Enter</button>
+            </div>
+        </section>
 
+        <section class="section section-left">
+            <div class="overlay overlay-green">
+                <button class="enter-btn green">Enter</button>
+            </div>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
