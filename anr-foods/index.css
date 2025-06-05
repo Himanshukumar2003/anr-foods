@@ -38,8 +38,21 @@
 
 
 
+.footer-img {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 120px;
+    margin-bottom: 10px;
+}
 
-
+.footer-img img {
+    transform: scale(1.2);
+}
 
 
 
