@@ -12,6 +12,7 @@ Project: Restaurant and Catering Html
 ********************************************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --rac-primary-color: #159494;
     --rac-font-color: #dddddd;
@@ -210,7 +211,7 @@ p {
     margin-bottom: 10px;
 }
 
-.rac_section_heading1 h5{
+.rac_section_heading1 h5 {
     color: var(--rac-primary-color);
     margin-bottom: 10px;
 }
@@ -219,7 +220,8 @@ p {
     position: relative;
     color: var(--rac-white-color);
 }
-.rac_section_heading1 h3{
+
+.rac_section_heading1 h3 {
     color: var(--rac-primary-color);
     position: relative;
     text-align: center;
@@ -256,9 +258,11 @@ p {
 .rac_section_heading1 h3::after {
     margin-left: 17px;
 }
-.rac_logo img{
+
+.rac_logo img {
     max-width: 80px;
 }
+
 /********************************************************
     Inner Pages Banner Style
 ********************************************************/
@@ -321,24 +325,31 @@ p {
         border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
         transform: translateY(0px);
     }
+
     14% {
         border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
     }
+
     28% {
         border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
     }
+
     42% {
         border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
     }
+
     56% {
         border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
     }
+
     70% {
         border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
     }
+
     84% {
         border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
     }
+
     100% {
         border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
         transform: translateY(-20px);
@@ -428,9 +439,11 @@ p {
     top: 45px;
     background-repeat: no-repeat;
 }
-.rac_anr_banner{
+
+.rac_anr_banner {
     background-image: url('../images/anr_banner.jpeg');
 }
+
 @keyframes circlular {
     from {
         -webkit-transform: rotate(0deg) translate(-12px) rotate(0deg);
@@ -439,6 +452,7 @@ p {
         -o-transform: rotate(0deg) translate(-12px) rotate(0deg);
         transform: rotate(0deg) translate(-12px) rotate(0deg);
     }
+
     to {
         -webkit-transform: rotate(360deg) translate(-12px) rotate(-360deg);
         -moz-transform: rotate(360deg) translate(-12px) rotate(-360deg);
@@ -452,12 +466,14 @@ p {
     position: relative;
     z-index: 1;
 }
-.rac_hero_banner{
+
+.rac_hero_banner {
     background: var(--rac-primary-color);
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px 0 20px 30px;
 }
+
 .rac_banner_text h1 {
     font-size: 60px;
     font-weight: 700;
@@ -517,6 +533,7 @@ p {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
     }
+
     to {
         opacity: 1;
         transform: translateZ(0);
@@ -609,16 +626,14 @@ p {
 .rac_toggle_btn,
 .rac_res_logo {
     display: none;
+    color: #007c7c;
 }
 
 .ham {
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+
     user-select: none;
+    color: #007c7c;
     width: 50px;
 }
 
@@ -782,9 +797,11 @@ p {
         transform: scale(1);
         opacity: 0
     }
+
     30% {
         opacity: 0.4
     }
+
     100% {
         -webkit-transform: scale(1.8);
         transform: scale(1.8);
@@ -880,6 +897,7 @@ p {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -895,9 +913,10 @@ p {
     padding-left: 125px;
 }
 
-.rac_offer_content a{
+.rac_offer_content a {
     color: var(--rac-white-color)
 }
+
 .rac_offer_text {
     margin-bottom: 15px;
 }
@@ -1035,6 +1054,7 @@ p {
     0% {
         transform: translateX(0)
     }
+
     to {
         transform: translateX(10px)
     }
@@ -1104,7 +1124,8 @@ p {
     appearance: none;
 }
 
-.rac_form_input select, .rac_form_input select option{
+.rac_form_input select,
+.rac_form_input select option {
     cursor: pointer;
 }
 
@@ -1198,10 +1219,12 @@ p {
     background: #202020;
     border: 1px solid transparent;
 }
-.rac_con{
+
+.rac_con {
     border: 1px solid var(--rac-primary-color);
 }
-.rac_con:hover{
+
+.rac_con:hover {
     color: var(--rac-white-color);
     background: var(--rac-primary-color);
 }
@@ -1662,10 +1685,11 @@ p {
 
 .rac_app_img {
     margin-top: -80px;
-    display: flex ;
+    display: flex;
     align-items: center;
 }
-.rac_footer_heading img{
+
+.rac_footer_heading img {
     max-width: 100px;
 }
 
@@ -1810,7 +1834,8 @@ p {
 .rac_copyright_text {
     text-align: center;
 }
-.rac_copyright_text a{
+
+.rac_copyright_text a {
     color: var(--rac-white-color);
 }
 
@@ -1903,7 +1928,8 @@ p {
     max-width: 280px;
     margin-top: 15px;
 }
-.rac_plan_text p{
+
+.rac_plan_text p {
     color: #1D1E1E;
 }
 
@@ -1942,7 +1968,7 @@ p {
     background-position: center;
 }
 
-.rac_history_slider{
+.rac_history_slider {
     position: relative;
 }
 
@@ -1957,7 +1983,7 @@ p {
     overflow: hidden;
 }
 
-.rac_history_img img{
+.rac_history_img img {
     width: 100%;
     object-fit: cover;
 }
@@ -1987,7 +2013,7 @@ p {
     font-weight: 600;
 }
 
-.rac_history_slider .swiper-pagination-bullet-active{
+.rac_history_slider .swiper-pagination-bullet-active {
     color: var(--rac-primary-color);
 }
 
@@ -2023,11 +2049,11 @@ p {
     transition: 0.4s ease-in-out;
 }
 
-.rac_history_slider .swiper-pagination-bullet-active::before{
+.rac_history_slider .swiper-pagination-bullet-active::before {
     background-color: var(--rac-primary-color);
 }
 
-.rac_history_slider .swiper-pagination-bullet:last-child::before{
+.rac_history_slider .swiper-pagination-bullet:last-child::before {
     display: none;
 }
 
@@ -2044,12 +2070,12 @@ p {
     color: var(--rac-font-color);
 }
 
-.rac_history_text p{
+.rac_history_text p {
     margin-bottom: 10px;
     color: #1D1E1E;
 }
 
-.rac_history_text h4{
+.rac_history_text h4 {
     color: var(--rac-white-color);
     margin-bottom: 10px;
 }
@@ -2071,16 +2097,20 @@ p {
 .rac_contact_banner {
     background-image: url('../images/contact_banner.webp');
 }
-.rac_blog_banner{
+
+.rac_blog_banner {
     background-image: url('../images/blog-banner.jpg');
 }
-.rac_blog_banner1{
+
+.rac_blog_banner1 {
     background-image: url('../images/blog-banner1.jpg');
 }
-.rac_blog_banner2{
+
+.rac_blog_banner2 {
     background-image: url('../images/banner2.jpeg');
 }
-.rac_blog_banner3{
+
+.rac_blog_banner3 {
     background-image: url('../images/blog_banner3.jpeg');
 }
 
@@ -2095,18 +2125,21 @@ p {
 }
 
 
-.rac_blog_content{
+.rac_blog_content {
     padding: 100px 0;
 }
-.blog_item{
+
+.blog_item {
     margin: 20px 0;
 }
-.blog_item h2, 
-.blog_item h5{
+
+.blog_item h2,
+.blog_item h5 {
     color: var(--rac-primary-color);
     margin-bottom: 10px;
 }
-.blog_item ul li{
+
+.blog_item ul li {
     margin: 20px 0;
 }
 
@@ -2115,30 +2148,37 @@ p {
     color: var(--rac-white-color);
     border: 1px solid var(--rac-white-color);
 }
-.rac_chef_content{
+
+.rac_chef_content {
     padding-left: 80px;
 }
-.rac_chef_content h3{
+
+.rac_chef_content h3 {
     color: var(--rac-white-color);
 }
-.rac_chefs_wrapper{
+
+.rac_chefs_wrapper {
     padding-top: 60px;
 }
-.blog_item p{
+
+.blog_item p {
     color: #1D1E1E;
 }
-.anr_content{
+
+.anr_content {
     padding: 0 40px;
 }
-.anr_content p{
+
+.anr_content p {
     color: #1D1E1E;
 }
-.anr-image img{
+
+.anr-image img {
     border-radius: 0 20px 20px 0;
 }
 
-@media(max-width: 768px){
-    .rac_chef_content{
+@media(max-width: 768px) {
+    .rac_chef_content {
         padding-left: 80px;
     }
 }
