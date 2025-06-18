@@ -92,7 +92,7 @@
         left: -280px;
         top: 0;
         height: 100vh;
-        background-color: var(--rac-white-color);
+        background-color: white;
         width: 280px;
         padding: 30px 20px;
         margin: 0;
@@ -299,6 +299,7 @@
 .rac_nav_item>ul {
     display: flex;
     gap: 50px;
+    align-items: center;
     list-style: none;
 }
 
@@ -385,14 +386,32 @@
     width: 50px;
 }
 
-.line {
-    fill: none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: var(--rac-primary-color);
-    stroke-width: 4.5;
-    stroke-linecap: round;
+
+
+
+.ham7 .top {
+    stroke-dasharray: 40 172;
 }
 
+.ham7 .middle {
+    stroke-dasharray: 40 111;
+}
+
+.ham7 .bottom {
+    stroke-dasharray: 40 172;
+}
+
+.menu-open .ham7 .top {
+    stroke-dashoffset: -132px;
+}
+
+.menu-open .ham7 .middle {
+    stroke-dashoffset: -71px;
+}
+
+.menu-open .ham7 .bottom {
+    stroke-dashoffset: -132px;
+}
 
 /* ===== Global ===== */
 
@@ -559,10 +578,12 @@ h1 {
     margin-bottom: 2.5rem;
 }
 
+
+
 .contact-btn {
     background: var(--gradient-btn);
     border: none;
-    padding: 15px 35px;
+
     border-radius: var(--btn-radius);
     color: var(--color-white);
     font-weight: 600;
@@ -1044,10 +1065,15 @@ footer .social-link:hover {
 }
 
 .profile-designation {
-    font-size: 24px;
     margin-bottom: 10px;
     font-weight: bold;
     text-align: left;
+    font-size: 18px;
+}
+
+.profile-designation span {
+    font-size: 24px;
+
 }
 
 .profile-name {
@@ -1386,12 +1412,14 @@ footer .social-link:hover {
     font-size: 65px;
 }
 
+
+
 /* contect */
 .contact-btn {
     background: var(--gradient-btn);
     border: none;
     border-radius: var(--btn-radius);
-    padding: 1.2rem 3rem;
+    padding: 10px 20px;
     color: var(--color-white);
     font-weight: 600;
     font-size: 1.1rem;
@@ -1401,6 +1429,10 @@ footer .social-link:hover {
     overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+#download {
+    font-size: 14px !important;
 }
 
 .contact-btn::before {
@@ -1732,7 +1764,7 @@ textarea.form-control {
         left: -280px;
         top: 0;
         height: 100vh;
-        background-color: var(--rac-white-color);
+        background-color: white;
         width: 280px;
         padding: 30px 20px;
         margin: 0;

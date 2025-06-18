@@ -563,6 +563,7 @@ p {
     color: var(--rac-primary-color);
     padding: 10px 0;
     position: relative;
+    font-size: 21px;
 }
 
 .rac_nav_item>ul li a:hover,
@@ -626,14 +627,16 @@ p {
 .rac_toggle_btn,
 .rac_res_logo {
     display: none;
-    color: #007c7c;
 }
 
 .ham {
     cursor: pointer;
-
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
-    color: #007c7c;
     width: 50px;
 }
 
